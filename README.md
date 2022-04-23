@@ -1,7 +1,7 @@
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/MichaelX-3553/Uni-Watch.git)
-- Live Site URL: [Add live site URL here](https://uniwatch.netlify.app/)
+- Solution URL: [Git Hub Repo](https://github.com/MichaelX-3553/Uni-Watch.git)
+- Live Site URL: [Live Site](https://uniwatch.netlify.app/)
 
 - [Font Awesome](https://fontawesome.com) - This helped me with my icons
 
