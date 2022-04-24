@@ -11,17 +11,14 @@ html {
 :root {
 	/* colors */
 	--clr-light: #f3f3f3;
+	--clr-light-pink: #fff9ee;
 	--clr-white: #fff;
 	--clr-black: #0c0a0e;
 	--clr-grey: #655a6f;
-	---clr-blueish-violet: #4c0082;
-	--clr-violet: #3e003e;
-	--clr-pale-pink: hsl(294, 71%, 94%);
+	--clr-blueish-violet: #4c0082;
 	--clr-brownish-violet: #5e3862;
-	--clr-brownish-red: #cf6e6c;
+	--clr-brownish-red: #c0564a;
 	--clr-orange: #ffd125;
-	--clr-red: #d40000;
-	--clr-green: #81ffc0;
 	--clr-orange-red-grad: linear-gradient(
 		73deg,
 		rgba(255, 209, 37, 1) 51%,
@@ -70,6 +67,12 @@ body > * {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
+}
+
+.container svg {
+	display: block;
+	width: 100vw;
 }
 
 .header {
@@ -79,9 +82,10 @@ body > * {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	padding: 30px 100px;
+	padding: 30px 100px 0 100px;
 	position: relative;
-	background: var(--clr-white);
+	gap: 70px;
+	background: var(--clr-light-pink);
 	z-index: 1;
 }
 
@@ -232,7 +236,7 @@ body > * {
 	bottom: -5px;
 	left: 0;
 	height: 3px;
-	background: var(---clr-blueish-violet);
+	background: var(--clr-blueish-violet);
 	transform: scaleX(0);
 	transform-origin: left;
 	transition: 0.5s;
@@ -274,7 +278,7 @@ body > * {
 
 .input-field .header-search {
 	text-decoration: none;
-	color: var(--clr-white);
+	color: var(--clr-light-pink);
 	width: max-content;
 	padding: 10px 20px;
 	background: var(--clr-brownish-red);
@@ -303,8 +307,7 @@ body > * {
 
 .ranks {
 	width: 50%;
-	min-height: 70vh;
-	max-height: 550px;
+	height: 70vh !important;
 	border: 3px solid var(--clr-grey);
 	border-left: none;
 	border-bottom: none;
@@ -317,29 +320,16 @@ body > * {
 	background: var(--clr-orange);
 }
 
-.ranks img {
-	width: 22vw;
+.ranks > * {
+	width: 50%;
 	position: absolute;
 	right: -11vw;
 }
 
 .rank-swirl {
+	width: 60%;
+	position: absolute;
+	left: 10%;
+	bottom: 10%;
 	opacity: 0.7;
-}
-
-.ranks .up-icon {
-	width: 150px;
-	height: 100px;
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	background: var(--clr-light);
-	border-radius: 300px 300px 0 0;
-}
-
-.ranks .up-icon img {
-	width: 25vw;
-	position: absolute;
-	left: -100%;
-	bottom: 5px;
 }
